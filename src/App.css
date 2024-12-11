@@ -1,0 +1,54 @@
+@media screen and (min-width: 1024px) {
+    .desserts-container {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .dessert-box {
+        width: 30%;
+    }
+    .dessert-box p {
+        color: gray;
+    }
+    .dessert-box h3 {
+        color: red;
+    }
+    .dessert-img-box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .add-to-cart-btn {
+        width: 50%;
+        transform: translateY(-50%);
+        background-color: white;
+        border: 2px solid lightgray;
+        border-radius: 2rem;
+        padding: 1rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .add-to-cart-btn:hover {
+        color: red;
+        border: 2px solid red;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+    }
+    .dessert-img-box img {
+        width: 100%;
+        border-radius: 1rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+
+}
