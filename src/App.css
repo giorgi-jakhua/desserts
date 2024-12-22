@@ -1,54 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Risque&display=swap');
+
 @media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
     .desserts-container {
-        width: 70%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        width: 65%;
     }
     .dessert-box {
         width: 30%;
     }
-    .dessert-box p {
-        color: gray;
-    }
-    .dessert-box h3 {
-        color: red;
-    }
-    .dessert-img-box {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .add-to-cart-btn {
-        width: 50%;
-        transform: translateY(-50%);
-        background-color: white;
-        border: 2px solid lightgray;
-        border-radius: 2rem;
-        padding: 1rem;
-        font-size: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .add-to-cart-btn:hover {
-        color: red;
-        border: 2px solid red;
-        cursor: pointer;
-        transition: 0.3s ease-in-out;
-    }
-    .dessert-img-box img {
-        width: 100%;
-        border-radius: 1rem;
-    }
 }
 
 @media screen and (max-width: 1024px) {
-    
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .desserts-container {
+        width: 100%;
+    }
+    .dessert-box {
+        width: 44%;
+        margin-left: 2%;
+    }
+    .cart {
+        width: 20rem;
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .desserts-container {
+        width: 100%;
+    }
+    .dessert-box {
+        width: 94%;
+        margin-left: 2%;
+    }
+    .cart {
+        width: 20rem;
+        margin-top: 1rem;
+    }
+}
 
+body {
+    background-color: hsl(13, 31%, 94%);
+    font-family: "Red Hat Text", serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.desserts-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.dessert-img-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dessert-box p {
+    transform: translateY(-100%);
+    color: hsl(12, 20%, 44%);
+}
+
+.dessert-box h4 {
+    transform: translateY(-200%);
+    color: hsl(14, 65%, 9%);
+}
+
+.dessert-box h3 {
+    transform: translateY(-250%);
+    color: hsl(14, 86%, 42%);
+}
+
+.add-to-cart-btn {
+    font-family: "Red Hat Text", serif;
+    transition: 0.2s ease-in-out;
+    width: 50%;
+    transform: translateY(-50%);
+    color: hsl(14, 65%, 9%);
+    background-color: hsl(20, 50%, 98%);
+    border: 2px solid hsl(14, 65%, 9%);
+    border-radius: 2rem;
+    padding: 1rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart {
+    width: 35%;
+    background-color: hsl(20, 50%, 98%);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart h1 {
+    color: hsl(14, 86%, 42%);
 }
