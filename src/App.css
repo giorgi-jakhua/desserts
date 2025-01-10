@@ -94,8 +94,8 @@ body {
 }
 
 .add-to-cart-btn {
-    font-family: "Red Hat Text", serif;
-    transition: 0.2s ease-in-out;
+    font-family: "Red Hat Text", serif, Arial, sans-serif;
+    transition: all 0.2s ease-in-out;
     width: 50%;
     transform: translateY(-50%);
     color: hsl(14, 65%, 9%);
@@ -107,7 +107,51 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    text-decoration: none;
 }
+
+.add-to-cart-btn:hover {
+    color: hsl(14, 86%, 42%);
+    border-color: hsl(14, 86%, 42%);
+    cursor: pointer;
+}
+
+
+.red-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: red;
+    color: white;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 39%;
+    transform: translateY(-50%);
+}
+
+.round-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.round-btn:hover {
+    background-color: white;
+    color: red;
+}
+
+
+
 
 .cart {
     width: 35%;
