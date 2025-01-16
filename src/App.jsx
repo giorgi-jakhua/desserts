@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import dessertsProducts from './data.json';
-import Desserts from './components/Desserts';
-import Cart from './components/Cart';
+import Desserts from './components/desserts';
+import Cart from './components/cart';
 
 function App() {
   const [quantities, setQuantities] = useState({});
