@@ -8,9 +8,9 @@ const Desserts = ({ products, quantities, handleAddToCart, handleDecrement, hand
     <div className="desserts-container">
       {/* data.json-ში შემავალ მასივზე ვიყენებ map ფუნქციას და თითოეული მასივის ელემენტისთვის(desserts) გამომაქვს dessert-box, სადაც ვიყენებ ამ მასივში შემავალ ინფორმაციებს.*/}
       {products.map((dessert) => ( 
-        <div className="dessert-box" key={dessert.name} style={{ marginLeft: '3%' }}>
-          <div className="dessert-img-box">
-            <picture>
+        <div className="dessert-box" key={dessert.name} style={{ marginLeft: '2%' }} >
+          <div className="dessert-img-box" >
+            <picture >
               <source
                 media="(min-width:1024px)"
                 srcSet={`${BASE_URL}/${dessert.images.desktop}`}
@@ -20,10 +20,10 @@ const Desserts = ({ products, quantities, handleAddToCart, handleDecrement, hand
                 srcSet={`${BASE_URL}/${dessert.images.tablet}`}
               />
               <img
+                style={quantities[dessert.name] ? {border: '2px solid red',  width: '100%', borderRadius: '1rem'}: {border: '2px solid transparent', width: '100%', borderRadius: '1rem'  }}
                 className="img"
                 src={`${BASE_URL}/${dessert.images.mobile}`}
                 alt={dessert.name}
-                style={{ width: '100%' }}
               />
             </picture>
             {quantities[dessert.name] ? (
